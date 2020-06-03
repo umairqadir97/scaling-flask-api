@@ -63,10 +63,10 @@ Do you think that because Flask is a micro-framework, it must only be good for s
 Can Flask scale? For many, that is the million dollar question. Unfortunately even the Flask official documentation is ambiguous about this topic. Flask is a small, unobtrusive framework that simplifies the interface between your application and the web server. Outside of that, it mostly stays out of your way, so if you need to write an application that can scale, Flask is not going to prevent it, and in fact, it will allow you to freely choose the components of your stack and not impose choices on you like big frameworks tend to do.
 
 
-**Key Learnings:**
-* Setting up boilerplates for django project
-* RESTful API development
-* Handling large code base :smile:
+**Top 3 Key Learnings:**
+* Data-warehouse implementation with Python
+* RESTful API development wit Flask
+* Flask can scale to hanle millions of requests per second :sunglasses:
 
 
 [Contributors are always welcomed!](#contributing)
