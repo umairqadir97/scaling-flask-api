@@ -1,0 +1,12 @@
+mfg
+MFGPN
+Manufacturer PN
+mpn
+Ordering Number
+Manufacturer Part Number
+PART
+FIX-MFGR PART
+MF P/N	
+Maker P/N
+Mfg Part Number
+TE P/N

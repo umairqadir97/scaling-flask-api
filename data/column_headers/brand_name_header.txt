@@ -1,0 +1,13 @@
+mfg
+manufacturer
+manufacturer name
+mfr
+制造商
+制造商
+Manufacturer
+MFGR Name
+FIX-MFGR
+MF
+Maker
+Mfg ID
+描述

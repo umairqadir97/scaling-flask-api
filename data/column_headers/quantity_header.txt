@@ -1,0 +1,9 @@
+qty
+quantity
+数量
+eau
+shortage
+excess
+DEMAND
+EAU(PCS)
+数量PCS
