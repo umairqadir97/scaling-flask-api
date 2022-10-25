@@ -182,7 +182,6 @@ def get_quantity_column(df, table_header):
                 df = df[table_header["row_number"]+1:]
             else:
                 header_row = pd.Series(df.columns)
-        # print("printing DF:\n\n", df.shape, df.columns)
 
         columns_ratio = {}
         for column in df.columns:
@@ -209,8 +208,6 @@ def get_quantity_column(df, table_header):
                 quantity_column = max(columns_ratio.items(), key=operator.itemgetter(1))[0]
                 suggested_quantity_column = quantity_column
 
-            # elif non_qty_clms == list(columns_ratio.keys()):   # quantity_keyword not detected
-            #     quantity_column = False
         if not quantity_column and columns_ratio.__len__() > 1 and sum(columns_ratio.values()) > 0:
             _columns_ratio = columns_ratio.copy()
             highest_ratio = max(_columns_ratio.items(), key=operator.itemgetter(1))
@@ -473,7 +470,6 @@ def try_search_with_keywords(df, table_header, brand_name_column, part_number_co
             suggested_quantity_column = sqc if not suggested_quantity_column else suggested_quantity_column
             return brand_name_column, part_number_column, suggested_quantity_column, table_header, df
 
-        # # row[1][row[1] == 'P/N'].index[0]
         # If still no column found
         if not all([sbnc, spnc, sqc]):
             for row in df.iterrows():

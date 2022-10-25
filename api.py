@@ -16,9 +16,6 @@ app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Global Variables, will be exported
-# get_all_brands_names()
-# get_all_part_numbers()
 
 # Global Variables
 BRAND_NAMES = set(read_lines('./data/outputs/brand_names.txt')).difference(invalid_brand_names)
@@ -166,10 +163,6 @@ def process_from_excel():
                     brand_name_column, part_number_column, suggested_quantity_column, table_header, df = \
                         try_search_with_keywords(df, table_header, brand_name_column, part_number_column,
                                                  suggested_quantity_column)
-
-                # if table_header["status"] and not (brand_name_column or part_number_column or quantity_column):
-                #     print("ERROR in detecting columns in excel file uploaded: ", filename, "\n")
-                #     return jsonify({"Error": "Can not detect required columns"}), 500
 
                 df["Suggested Quantity"] = 0
                 if suggested_quantity_column or suggested_quantity_column is 0:   # 0 is logically False
